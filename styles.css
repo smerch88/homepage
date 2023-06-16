@@ -88,6 +88,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  width: 100%;
+  max-width: 193px;
+}
+.contact-info__block > div {
+  margin: auto;
 }
 
 .contact-info__block--center {
@@ -209,6 +215,10 @@ body {
   color: var(--primary-text-color);
   text-align: left;
   margin-bottom: 10px;
+}
+
+.experiences__company-project-name > a {
+  color: var(--primary-text-color);
 }
 
 .experiences__company-project-responsibilities {
