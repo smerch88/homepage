@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Résumé</title>
   </head>
   <body>
@@ -11,11 +12,15 @@
       <div class="resume">
         <div class="container">
           <div class="resume__block">
-            <h1 class="contact-info__header">Arsenii Maksymenko</h1>
-            <h3 class="contact-info__sub-header">FullStack Developer</h3>
+            <h1 class="contact-info__header" data-aos="fade-right">
+              Arsenii Maksymenko
+            </h1>
+            <h3 class="contact-info__sub-header" data-aos="fade-left">
+              FullStack Developer
+            </h3>
 
             <div class="contact_info_container fh">
-              <div class="contact-info__block">
+              <div class="contact-info__block" data-aos="fade-up-right">
                 <span
                   href=""
                   rel="noopener noreferrer"
@@ -75,7 +80,10 @@
                 </a>
               </div>
 
-              <div class="contact-info__block contact-info__block--center">
+              <div
+                class="contact-info__block contact-info__block--center"
+                data-aos="flip-left"
+              >
                 <div>
                   <img
                     class="contact-info__avatar"
@@ -85,7 +93,7 @@
                 </div>
               </div>
 
-              <div class="contact-info__block">
+              <div class="contact-info__block" data-aos="fade-up-left">
                 <a href="mailto:maxarmyk@gmail.com" class="contact-info__item">
                   <div class="contact-info__item-icon-wrapper">
                     <svg
@@ -140,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container" data-aos="flip-down">
           <div class="resume__block">
             <div class="intro">
               <div class="intro__icon-wrapper">
@@ -158,12 +166,12 @@
                 I am a proactive problem-solver with many skills. I enjoy
                 developing functional applications and sharing my work with
                 others. I am passionate about technology and constantly seeking
-                to improve my skills
+                to improve my skills.
               </p>
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container" data-aos="flip-up">
           <div class="resume__block">
             <div class="skills">
               <h3 class="skills__header">Skills</h3>
@@ -177,7 +185,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div class="resume__block">
             <div class="main-info fh">
               <div class="experiences">
@@ -253,5 +261,9 @@
         </div>
       </div>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 600 });
+    </script>
   </body>
 </html>
